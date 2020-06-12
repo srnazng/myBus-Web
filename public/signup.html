@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>myBus</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries 
+        -->
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+
+        <script src="script.js"></script>
+    </head>
+    <body style="background-color: #cceaed">
+        <h1 class="login" style="padding-top: 200px"><img src="myBusLogo.png" alt="myBus Logo"></h1>
+        <h3 class="login">Admin Account Sign Up<br><br></h3>
+        <form id="signup_form" class = "login">
+            <input type="text" name="firstname" placeholder="First Name" style="padding-left: 10px;"><br><br>
+            <input type="text" name="lastname" placeholder="Last Name" style="padding-left: 10px;"><br><br>
+            <input type="email" name="email" placeholder="Email" style="padding-left: 10px;"><br><br>
+            <input type="password" name="password" placeholder="Password" style="padding-left: 10px;"><br><br>
+            <input type="password" name="password_retype" placeholder="Re-type Password" style="padding-left: 10px;"><br><br>
+            <input class="btn btn-primary" value="Create Account" onclick="signup()" readonly><br><br>
+        </form>
+        <form class = "login" style="padding-bottom:200px" action="index.html">
+            <input class="btn btn-primary" onclick="to_login()" value="Back" readonly>
+        </form>
+
+    </body>
+</html>

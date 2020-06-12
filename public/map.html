@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>myBus</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries 
+        -->
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body style="background-color: #cceaed" class="format">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" class="cornerimg">
+            <a class="navbar-brand" href="#"><img src="myBusLogo_white.png" alt="myBus Logo" class="cornerimg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="editBus.html">Bus List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="editStudent.html">Student List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Sign Out</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="loader" id="loading"></div>
+    
+    
+    <h3 style="padding-top: 50px">Bus Tracker</h3>
+        <!--The div element for the map -->
+    <div id="mapDIV" style="display: none">
+        <div id="map" > </div>
+    </div>
+        <!-- Replace the value of the key parameter with your own API key. -->
+    
+
+        <script>
+        function initMap() {
+            // The location of Uluru
+            var location = {lat: getLat(), lng: getLong()};
+            // The map, centered at location
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 15, center: location});
+            // The marker, positioned at location
+            var marker = new google.maps.Marker({position: location, map: map});
+         }
+
+
+        getJSON();
+        //console.log(location.lat);
+        //console.log(location.long);
+         
+        </script>
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAORlDO5SvxSYqXyvHPHT9mfJrvjdBzP0g&callback=initMap">   
+        </script>
+
+        <div style="text-align: center; padding: 25px; display: none;" id = "message">
+            <p>Location of this trackerBox is not enabled at this time.</p>
+        </div>
+
+         <div id="footer">
+            <p>Contact us for more information at <b> srnazng@gmail.com </b> or <b>khare.adhya@gmail.com</b></p>
+            
+           
+          </div>
+        
+    </body>
+
+   
+</html>
+
