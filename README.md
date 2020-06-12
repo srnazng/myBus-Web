@@ -1,0 +1,4 @@
+# myBus-Web
+MyBus is a product to improve communication within the school bus system and consists of a trackerBox, iOS app, and web platform for administrators. The administrator website is a platform in which the company that purchased the product can create an account to manage the students and trackerBoxes in their system, which is all stored on a Firestore database. Once the admin adds a trackerBoxes to their system, students can be assigned to that specific trackerBox to view. The website also generates individual bus passes for each student with information to create their own myBus account on the app. Admin are also able to see the location of enabled trackerBoxes on a map view (Google Maps API). 
+
+The MyBus administration website can be viewed at: https://mybus-99b9a.web.app/index.html
