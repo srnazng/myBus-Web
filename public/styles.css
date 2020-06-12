@@ -1,7 +1,14 @@
 .login {
     text-align: center;
-    background-color: #cceaed;
 }
+
+div.scroll { 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    margin:4px, 4px; 
+    padding: 4px;
+    height: 550px; 
+} 
 
 .add {
     text-align: left;

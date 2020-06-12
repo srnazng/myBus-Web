@@ -17,19 +17,20 @@
         <script src="script.js"></script>
     </head>
     <body style="background-color: #cceaed">
-        <h1 class="login" style="padding-top: 200px"><img src="myBusLogo.png" alt="myBus Logo"></h1>
-        <h3 class="login">Admin Account Sign Up<br><br></h3>
-        <form id="signup_form" class = "login">
-            <input type="text" name="firstname" placeholder="First Name" style="padding-left: 10px;"><br><br>
-            <input type="text" name="lastname" placeholder="Last Name" style="padding-left: 10px;"><br><br>
-            <input type="email" name="email" placeholder="Email" style="padding-left: 10px;"><br><br>
-            <input type="password" name="password" placeholder="Password" style="padding-left: 10px;"><br><br>
-            <input type="password" name="password_retype" placeholder="Re-type Password" style="padding-left: 10px;"><br><br>
-            <input class="btn btn-primary" value="Create Account" onclick="signup()" readonly><br><br>
-        </form>
-        <form class = "login" style="padding-bottom:200px" action="index.html">
-            <input class="btn btn-primary" onclick="to_login()" value="Back" readonly>
-        </form>
-
+        <div style="border-radius: 10px; width: 400px; padding: 20px; border: 2px solid gray; margin: auto; margin-top: 125px; height: 700px; background-color: #ffffff">
+            <h1 class="login" style="padding-top: 40px"><img src="HDlogo.png" width=150px; height=150px; alt="myBus Logo"></h1>
+            <h3 class="login" style="padding-top:15px;">Admin Account <br> Sign Up<br></h3>
+            <form id="signup_form" class = "login">
+                <input type="text" name="firstname" placeholder="First Name" style="padding-left: 10px; margin-bottom: 10px; background-color: #f0f0f0;"><br>
+                <input type="text" name="lastname" placeholder="Last Name" style="padding-left: 10px; margin-bottom: 10px; background-color: #f0f0f0;"><br>
+                <input type="email" name="email" placeholder="Email" style="padding-left: 10px; margin-bottom: 10px; background-color: #f0f0f0;"><br>
+                <input type="password" name="password" placeholder="Password" style="padding-left: 10px; margin-bottom: 10px; background-color: #f0f0f0;"><br>
+                <input type="password" name="password_retype" placeholder="Re-type Password" style="padding-left: 10px; margin-bottom: 10px; background-color: #f0f0f0;"><br><br>
+                <input class="btn btn-primary" value="Create Account" onclick="signup()" readonly style="margin-bottom: 10px;"><br>
+            </form>
+            <form class = "login" style="padding-bottom:200px" action="index.html">
+                <input class="btn btn-primary" onclick="to_login()" value="Back" readonly>
+            </form>
+        </div>
     </body>
 </html>

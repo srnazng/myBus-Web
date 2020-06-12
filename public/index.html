@@ -16,15 +16,17 @@
         <script src="script.js"></script>
     </head>
     <body style="background-color: #cceaed">
-        <h1 class="login" style="padding-top: 200px"><img src="myBusLogo.png" alt="myBus Logo"></h1>
-        <h3 class="login">Admin Login<br><br></h3>
-        <form class="login" id="signin_form">
-            <input type="email" name="email" placeholder="Email" style="padding-left: 5px;"><br><br>
-            <input type="password" name="password" placeholder="Password" style="padding-left: 5px;"><br><br>
-            <input class="btn btn-primary" onclick="signin()" value="Login" readonly><br><br>
-        </form>
-        <form class = "login" style="padding-bottom:200px;">
-            <input class="btn btn-primary" onclick="to_signup()" value="Sign Up" readonly>
-        </form>
+        <div style="border-radius: 10px; width: 400px; padding: 20px; border: 2px solid gray; margin: auto; margin-top: 150px; height: 550px; background-color: #ffffff">
+            <h1 class="login" style="padding-top: 20px"><img src="HDlogo.png" alt="myBus Logo" width=150px; height=150px></h1>
+            <br><h3 class="login">Admin Login<br></h3>
+            <form class="login" id="signin_form">
+                <input type="email" name="email" placeholder="Email" style="padding-left: 5px; margin-bottom: 10px; background-color: #f0f0f0;"><br>
+                <input type="password" name="password" placeholder="Password" style="padding-left: 5px;  background-color: #f0f0f0;"><br><br><br>
+                <input class="btn btn-primary" onclick="signin()" value="Login" readonly style="margin-bottom:10px">
+            </form>
+            <form class = "login">
+                <input class="btn btn-primary" onclick="to_signup()" value="Sign Up" readonly>
+            </form>
+        </div>
     </body>
 </html>
